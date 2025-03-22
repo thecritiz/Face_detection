@@ -1,73 +1,65 @@
-Face_detection
+# Face Detection
 
 This project captures face images using a webcam, detects faces using Haar cascades, and saves the images in grayscale for training a face recognition model.
 
-Features
+## 🚀 Features
+- **Automatic Face Detection** using OpenCV.
+- **Incremental User ID Generation** using a tracking file.
+- **200 Face Image Capture** per user.
+- **Real-time Display** of the captured face.
 
-Automatic face detection using OpenCV.
+## 🛠️ Prerequisites
+- Python 3.x
+- OpenCV (`cv2`)
+- NumPy
 
-Incremental user ID generation using a tracking file.
+## 📥 Installation
+1. **Clone the Repository:**
+    ```bash
+    git clone https://github.com/thecritiz/Face_detection.git
+    cd Face_detection
+    ```
+2. **Install Dependencies:**
+    ```bash
+    pip install opencv-python numpy
+    ```
 
-Captures and saves 200 face images per user.
+## 🧑‍💻 Usage
+1. **Run the Script:**
+    ```bash
+    python dataset_generator.py
+    ```
+2. Follow the on-screen instructions to capture **200 face images**.
+3. Press **Enter** to exit before completion if necessary.
 
-Displays the captured face in real-time.
+## 📁 File Structure
+- `dataset_generator.py` - Main script to generate the dataset.
+- `last_user_id.txt` - Tracks the last user ID.
+- `data/` - Directory to store captured images.
 
-Prerequisites
+## 📝 Notes
+- Ensure your **webcam** is functional and properly connected.
+- Captured images will be stored in the format:
+    ```
+    data/user.<id>.<image_number>.jpg
+    ```
 
-Python 3.x
+## 🛡️ License
+This project is licensed under the **MIT License**. Feel free to contribute or modify as needed.
 
-OpenCV (cv2)
-
-NumPy
-
-Installation
-
-Clone this repository:
-
-git clone https://github.com/thecritiz/Face_detection.git
-cd Face_detection
-
-Install dependencies:
-
-pip install opencv-python numpy
-
-Usage
-
-Run the script:
-
-python dataset_generator.py
-
-Follow on-screen instructions to capture 200 face images.
-
-Press Enter to exit before completion if necessary.
-
-File Structure
-
-dataset_generator.py: Main script to generate the dataset.
-
-last_user_id.txt: Tracks the last user ID.
-
-data/: Directory to store captured images.
-
-Notes
-
-Ensure your webcam is functional and properly connected.
-
-Captured images will be stored in data/user.<id>.<image_number>.jpg.
-
-License
-
-This project is licensed under the MIT License. Feel free to contribute or modify as needed.
-
-Contribution
-
-Fork the repository.
-
-Create your feature branch: git checkout -b feature/YourFeature
-
-Commit your changes: git commit -m 'Add your feature'
-
-Push to the branch: git push origin feature/YourFeature
-
-Open a Pull Request.
+## 🤝 Contribution
+1. **Fork the Repository.**
+2. **Create a Feature Branch:**
+    ```bash
+    git checkout -b feature/YourFeature
+    ```
+3. **Commit Your Changes:**
+    ```bash
+    git commit -m 'Add your feature'
+    ```
+4. **Push to the Branch:**
+    ```bash
+    git push origin feature/YourFeature
+    ```
+5. **Open a Pull Request.**
 
