@@ -39,6 +39,7 @@ This project captures face images using a webcam, detects faces using Haar casca
 
 ## 📝 Notes
 - Ensure your **webcam** is functional and properly connected.
+
 - Captured images will be stored in the format:
     ```
     data/user.<id>.<image_number>.jpg
